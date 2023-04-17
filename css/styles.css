@@ -258,7 +258,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   border: none;
-  padding: 12px 24px;
+  padding: 11px 23px;
   border: 1px solid var(--border-buttons);
 }
 .list-button:hover,
