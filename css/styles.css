@@ -366,7 +366,6 @@ a {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--second-background-color);
@@ -386,9 +385,17 @@ a {
   line-height: 1.1;
   margin-bottom: 72px;
   color: var(--second-background-color);
-  align-items: center;
+  text-align: center;
   justify-content: center;
 }
+/* font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--second-background-color);
+  margin-bottom: 72px;
+  text-align: center; */
 .customers-list {
   gap: 24px;
   display: flex;
@@ -488,16 +495,18 @@ a {
   background-color: #31d0aa;
 }
 .footer-icon {
-  fill: var(--background-color);
+  fill: var(--button-list-background);
 }
 .portfolio-links {
   border: 1px solid #e7e9fc;
   border-top: none;
   padding: 32px 16px;
+}
+.cards-link {
   display: block;
 }
-.portfolio-links:hover,
-.portfolio-links:focus {
+.cards-link:hover,
+.cards-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
