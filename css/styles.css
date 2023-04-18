@@ -7,6 +7,7 @@
   --button-list-background: #f4f4fd;
   --second-background-color: #2e2f42;
   --border-buttons: #e7e9fc;
+  --customers-icon-color: #8e8f99;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -26,6 +27,7 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
 }
 img {
   display: block;
@@ -37,12 +39,10 @@ button {
   border: none;
   background-color: transparent;
 }
-.list {
-  list-style: none;
-}
-.link {
+a {
   text-decoration: none;
 }
+
 .container {
   width: 1158px;
   margin-left: auto;
@@ -66,6 +66,8 @@ button {
   display: flex;
   gap: 40px;
   align-items: center;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .site-nav {
   padding: 24px 0;
@@ -126,6 +128,9 @@ button {
 .menu-item {
   background-color: var(--background-color);
   align-items: flex-start;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .menu-item-about {
   max-width: 264px;
@@ -169,6 +174,15 @@ button {
 .hero {
   background: var(--second-background-color);
   padding: 188px 0 188px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/img-name.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
 }
 .hero-title {
   font-weight: 700;
@@ -209,8 +223,11 @@ button {
 }
 /* ============== Advantages ============== */
 .advantages-contain {
+  display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
   width: 264px;
   height: 112px;
   background-color: var(--button-list-background);
@@ -225,6 +242,7 @@ button {
 }
 
 .advantages-icon {
+  margin: 24px 100px;
 }
 
 .about-sections {
@@ -271,7 +289,7 @@ button {
   background-color: var(--selection-color);
 }
 .social-icon {
-  fill: var(--background-color);
+  fill: var(--button-list-background);
 }
 
 /* ============== Porfolio ==================== */
@@ -356,6 +374,42 @@ button {
   background-color: var(--button-list-background);
   padding: 120px 0 120px;
 }
+.customers {
+  padding: 120px 0 120px;
+}
+.customers-title {
+  font-size: 36px;
+  line-height: 1.1;
+  margin-bottom: 72px;
+  color: var(--second-background-color);
+}
+.customers-list {
+  gap: 24px;
+  display: flex;
+}
+.customers-item {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+.customers-links {
+  fill: var(--customers-icon-color);
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.customers-links:hover,
+.customers-links:focus {
+  border-color: var(--selection-color);
+}
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: currentr;
+  border-color: var(--selection-color);
+}
 
 /* =================== Footer ================== */
 .footer {
@@ -389,9 +443,12 @@ button {
   display: inline-block;
   margin-bottom: 16px;
 }
+.footer {
+  display: flex;
+}
 .footer-contain {
-  width: 205px;
-  margin-top: auto;
+  align-items: baseline;
+  display: flex;
 }
 .footer-list {
   display: flex;
