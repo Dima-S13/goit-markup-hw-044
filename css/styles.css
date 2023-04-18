@@ -132,6 +132,7 @@ a {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+
 .menu-item-about {
   max-width: 264px;
   gap: 24px;
@@ -401,7 +402,8 @@ a {
   align-items: center;
   display: flex;
 }
-.customers-links:hover {
+.customers-links:hover,
+.customers-links:focus {
   border-color: #404bbf;
   color: #404bbf;
 }
@@ -447,6 +449,17 @@ a {
 .footer-contain {
   align-items: baseline;
   display: flex;
+}
+.first-foot-container {
+  margin-right: 120px;
+}
+.social-media-suptitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--background-color);
+  margin-bottom: 16px;
 }
 .footer-list {
   display: flex;
