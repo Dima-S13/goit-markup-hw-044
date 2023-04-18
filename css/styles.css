@@ -378,11 +378,14 @@ a {
 .customers {
   padding: 120px 0 120px;
 }
+
 .customers-title {
   font-size: 36px;
   line-height: 1.1;
   margin-bottom: 72px;
   color: var(--second-background-color);
+  align-items: center;
+  justify-content: center;
 }
 .customers-list {
   gap: 24px;
