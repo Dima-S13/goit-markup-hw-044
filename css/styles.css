@@ -392,7 +392,7 @@ a {
   height: 88px;
 }
 .customers-links {
-  fill: var(--customers-icon-color);
+  color: var(--customers-icon-color);
   width: 100%;
   height: 100%;
   border: 1px solid #8e8f99;
@@ -401,14 +401,12 @@ a {
   align-items: center;
   display: flex;
 }
-.customers-links:hover,
-.customers-links:focus {
-  border-color: var(--selection-color);
+.customers-links:hover {
+  border-color: #404bbf;
+  color: #404bbf;
 }
-.customers-icon:hover,
-.customers-icon:focus {
-  fill: currentr;
-  border-color: var(--selection-color);
+.customers-icon {
+  fill: currentColor;
 }
 
 /* =================== Footer ================== */
