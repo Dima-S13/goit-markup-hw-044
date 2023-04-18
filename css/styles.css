@@ -207,6 +207,26 @@ button {
   color: var(--background-color);
   background-color: var(--selection-color);
 }
+/* ============== Advantages ============== */
+.advantages-contain {
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  background-color: var(--button-list-background);
+}
+.advantages-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+}
+.advantages-items {
+}
+
+.advantages-icon {
+}
+
 .about-sections {
   padding: 120px 0 120px;
   display: flex;
@@ -224,6 +244,34 @@ button {
 .skills-item {
   width: calc((100% - 48px) / 3);
   gap: 24px;
+}
+/* ================ Team =============== */
+
+/* ================= Advantages ================ */
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+}
+.social-items {
+}
+.social-links {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--button-list-color);
+}
+.social-links:hover,
+.social-links:focus {
+  background-color: var(--selection-color);
+}
+.social-icon {
+  fill: var(--background-color);
 }
 
 /* ============== Porfolio ==================== */
@@ -290,6 +338,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-text);
+  margin-bottom: 8px;
 }
 
 .title {
@@ -312,6 +361,7 @@ button {
 .footer {
   background: var(--second-background-color);
   padding: 100px 0 100px;
+  display: flex;
 }
 .footer-suptitle {
   font-size: 16px;
@@ -338,6 +388,34 @@ button {
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
+}
+.footer-contain {
+  width: 205px;
+  margin-top: auto;
+}
+.footer-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+}
+.footer-links {
+  display: flex;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: var(--button-list-color);
+}
+.footer-links:hover,
+.footer-links:focus {
+  background-color: #31d0aa;
+}
+.footer-icon {
+  fill: var(--background-color);
 }
 .portfolio-links {
   border: 1px solid #e7e9fc;
