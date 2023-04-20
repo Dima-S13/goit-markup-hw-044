@@ -70,9 +70,7 @@ a {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .site-nav {
-  padding: 24px 0;
   align-items: center;
-  margin: auto;
   display: flex;
 }
 .logo {
@@ -140,12 +138,13 @@ a {
 }
 
 .menu-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--second-background-color);
-  padding: 24px 0 24px;
+  padding: 24px 0;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -244,7 +243,6 @@ a {
 }
 
 .advantages-icon {
-  margin: 24px 100px;
 }
 
 .about-sections {
